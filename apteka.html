@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Wnuczek - Apteka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="phone-container">
+        
+        <img src="logomini.png" alt="minilogo" class="illustration-small">
+
+        <div class="alert-content">
+            <svg class="alarm-icon" viewBox="0 0 24 24" fill="none" stroke="#1c1a45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="13" r="8"></circle>
+                <path d="M12 9v4l2 2"></path>
+                <path d="M5 3L2 6"></path>
+                <path d="M19 3l3 3"></path>
+            </svg>
+
+            <input type="time" id="alarm-time" class="time-input" value="12:00">
+            
+            <h2 class="alert-title">CZAS NA LEKI</h2>
+            
+            <img src="pillbox.png" alt="Pudełko na leki" class="pills-image">
+        </div>
+
+        <button id="btn-taken" class="start-button">PRZYJĘTE!</button>
+        
+        <button type="button" id="btn-reset-leki" class="clear-button hidden">COFNIJ ZAZNACZENIE</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

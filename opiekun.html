@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Wnuczek - Profil Opiekuna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="phone-container">
+        
+        <img src="logomini.png" alt="minilogo" class="illustration-small">
+
+        <div class="guide-header">
+            <h1 class="guide-title">OPIEKUN</h1>
+        </div>
+
+        <div id="opiekun-photo-container" class="photo-container-hidden">
+            <img id="opiekun-photo-preview" src="opiekun.jpg" alt="Zdjęcie opiekuna" class="profile-photo">
+        </div>
+
+        <form id="opiekun-form" class="profile-form">
+            
+            <div class="input-group">
+                <label for="opiekun-name">Imię i nazwisko:</label>
+                <input type="text" id="opiekun-name" placeholder="np. Danusia Siwa" required>
+            </div>
+
+            <div class="input-group">
+                <label for="opiekun-phone">Numer telefonu:</label>
+                <input type="tel" id="opiekun-phone" placeholder="np. 123 456 789" required>
+            </div>
+
+            <div class="input-group">
+                <label for="opiekun-relation">Pokrewieństwo:</label>
+                <select id="opiekun-relation">
+                    <option value="Wnuczek / Wnuczka">Wnuczek / Wnuczka</option>
+                    <option value="Syn / Córka">Syn / Córka</option>
+                    <option value="Sąsiad / Sąsiadka">Sąsiad / Sąsiadka</option>
+                    <option value="Inne">Inne</option>
+                </select>
+            </div>
+
+            <button type="submit" class="start-button form-submit">ZAPISZ DANE</button>
+            
+            <button type="button" id="btn-clear" class="clear-button">WYCZYŚĆ DANE</button>
+        </form>
+
+        <a href="menu.html" class="back-link">Wróć do menu</a>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
